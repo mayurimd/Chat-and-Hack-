@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp">
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="C H A T"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/camera_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.48">
+
+
+
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </ListView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:background="#FFFFFF">
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <EditText
+                    android:id="@+id/ComposeMessageID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Write Message"
+                    android:background="@drawable/background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/SendChatMessageButtonID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Send"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="SendChatMessage"
+                    android:background="@drawable/custom_button"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+

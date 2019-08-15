@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+
+        <ImageView
+            android:id="@+id/photo_ME"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+            <TextView
+                android:id="@+id/titleID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CONVERSATIONS"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.75"
+        android:paddingLeft="30dp"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+            </ListView>
+
+
+
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="LogOutME"
+        android:src="@drawable/logout_icon"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Quit"
+                android:background="@drawable/custom_button"
+                android:layout_centerInParent="true"
+                android:onClick="QuitButtonClicked"
+                />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
